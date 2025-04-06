@@ -3,7 +3,7 @@
 This project demonstrates how to extend the **Olivero** theme in **Drupal 10**, creating a custom sub theme with personalized styles, layout modifications and additional features while preserving the core functionality of the base theme
 
 
-## Getting Started:
+# Getting Started:
 
 **1. Clone the Sub theme**
 
