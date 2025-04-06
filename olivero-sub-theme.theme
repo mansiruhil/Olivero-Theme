@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming
+ */
+
+use \Drupal\Core\Asset\AttachedAssetsInterface;
+
+/**
+ * Implements hook_css_alter().
+ */
+function olivero_sub_theme_css_alter(&$css, AttachedAssetsInterface $assets) {
+  $pathService = \Drupal::service('extension.list.theme');
+  $oliveroThemePath = $pathService->getPath('olivero');
+  $myThemePath = $pathService->getPath('olivero_sub_theme');
+  // Replace all css files by our files.
+  foreach ($css as $cssFile => $value) {
+    if (strpos($cssFile, $oliveroThemePath) !== FALSE) {
+      $css[$cssFile]['data'] = str_replace($oliveroThemePath, $myThemePath, $css[$cssFile]['data']);
+    }
+  }
+}
