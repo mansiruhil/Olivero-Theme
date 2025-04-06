@@ -1,40 +1,55 @@
-# Drupal 10 Olivero sub theme
+# Extend the Olivero Theme – Drupal 10:
 
-__Note__: This will be obsolete with Drupal 11.x, see
-[Allow starterkit theme generator tool to clone Olivero](https://www.drupal.org/project/drupal/issues/3301173)
+This project demonstrates how to extend the **Olivero** theme in **Drupal 10**, creating a custom sub theme with personalized styles, layout modifications and additional features while preserving the core functionality of the base theme
 
-Minimal template to create a sub theme from [Drupal Olivero theme](https://www.drupal.org/project/olivero).
 
-This is only recommended if you want to make **minor tweaks** and understand that Olivero could break your
-modifications as it changes.
+## Getting Started:
 
-## Quick HowTo: 
+**1. Clone the Sub theme**
 
-Copy this theme in your Drupal theme folder `web/themes/custom` and rename it, ie `olivero_sub_theme` > `_MY_THEME_NAME_`.
-
-Rename all files in this folder from `olivero_sub_theme` > `_MY_THEME_NAME_`.
-
-Edit `_MY_THEME_NAME_.info.yml` with your informations.
-
-Edit `_MY_THEME_NAME_.theme` to change `olivero_sub_theme_css_alter` > `MY_THEME_NAME_css_alter` and change the theme
-name `olivero_sub_theme` with your name.
-
-Run:
+Clone this repo into your Drupal site's `/themes/custom/` directory:
 
 ```bash
-scripts/build.sh
-```
+cd /web/themes/custom/
+git clone https://github.com/your-username/olivero-subtheme.git
 
-Enable the theme as usual from your Drupal.
+**2. Enable the Sub theme**
 
-Visit theme settings to set base colors: `Administration > Appearance > Appearance settings > _MY_THEME_NAME_`
+Enable it via Drush:
 
-Disable css, js aggregation and cache in Drupal, see the [Drupal documentation](https://www.drupal.org/docs/develop/development-tools/disable-caching).
+drush theme:enable olivero_subtheme
+drush config:set system.theme default olivero_subtheme
 
-Adapt [css/theme.css](./css/theme.css) and [js/theme.js](./js/theme.js).
 
-Build the css with postcss by running each time:
+## Customizations:
 
-```bash
-scripts/build.sh
-```
+CSS: Add your styles in css/theme.css.
+
+JS: Add interactive behavior via js/theme.js.
+
+Twig Templates: Override templates for markup changes.
+
+Libraries: Managed in olivero-subtheme.libraries.yml.
+
+## Features:
+
+Fully responsive design
+
+Custom color palette and typography
+
+Modular layout structure
+
+Extendable and lightweight
+
+## Requirements:
+
+Drupal 10+
+
+Olivero Theme (Core)
+
+## License
+
+MIT License
+
+
+
