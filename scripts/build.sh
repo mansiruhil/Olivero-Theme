@@ -2,8 +2,6 @@
 #
 # Generate and copy Drupal Olivero css and fonts to our theme for minimal override.
 #
-# @see https://developpeur-drupal.com/en/article/update-create-drupal-10-olivero-sub-theme
-#
 # You can customize your theme by editing:
 # - css/variables.pcss.css
 # - css/theme.css
