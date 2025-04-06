@@ -3,7 +3,7 @@
 This project demonstrates how to extend the **Olivero** theme in **Drupal 10**, creating a custom sub theme with personalized styles, layout modifications and additional features while preserving the core functionality of the base theme
 
 
-# Getting Started:
+**Getting Started:**
 
 **1. Clone the Sub theme**
 
@@ -13,7 +13,7 @@ Clone this repo into your Drupal site's `/themes/custom/` directory:
 cd /web/themes/custom/
 git clone https://github.com/your-username/olivero-subtheme.git
 
-**2. Enable the Sub theme**
+2. Enable the Sub theme
 
 Enable it via Drush:
 
@@ -21,7 +21,7 @@ drush theme:enable olivero_subtheme
 drush config:set system.theme default olivero_subtheme
 
 
-## Customizations:
+Customizations:
 
 CSS: Add your styles in css/theme.css.
 
@@ -31,7 +31,7 @@ Twig Templates: Override templates for markup changes.
 
 Libraries: Managed in olivero-subtheme.libraries.yml.
 
-## Features:
+Features:
 
 Fully responsive design
 
@@ -41,7 +41,7 @@ Modular layout structure
 
 Extendable and lightweight
 
-## Requirements:
+Requirements:
 
 Drupal 10+
 
